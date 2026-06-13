@@ -9,54 +9,51 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
- 
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX'); 
-  </script>
- 
 </head>
 <body>
 <div class="page-wrap">
 
 <!-- ══ NAV ══ -->
 <nav>
-  <a href="https://pcbapps.com" class="nav-logo">
+   <a href="https://pcbapps.com" class="nav-logo">
    <div class="nav-logo-mark">
    <img src="PCB-Apps-logo.png" alt="PCB Apps — Pioneers in Business Applications" />
   </a>
   </div>
   <div class="nav-links">
-  <a href="index.html" class="active">Home</a>
+  <a href="index.html">Home</a>
     <a href="WhyAutomate.html">Why Automate</a>
     <a href="TheProblem.html">The Problem</a>
     <a href="Capabilities.html">Capabilities</a>
-    <a href="ERPSupport.html">ERP Support</a>
+    <a href="ERPSupport.html" class="active">ERP Support</a>
     <a href="Industries.html">Industries</a>
     <a href="Outcomes.html">Outcomes</a>
   </div>
-  <button class="nav-cta" onclick="window.location.href='#'" >Request a Demo</button>
+  <button class="nav-cta">Request a Demo</button>
 </nav>
 
-<!-- ══ HERO ══ -->
-<section class="hero reveal">
-  <div class="hero-badge"><i class="fa-solid fa-bolt" style="font-size:11px;"></i>     Enterprise Automation &amp; Intelligence Platform</div>
-  <p class="hero-eyeline">Proven on JD Edwards. Built for every ERP.</p>
-  <h1 class="hero-title">      <span class="gradient">JD'EAI™</span> — Enterprise Automation<br>Meets Trusted Intelligence.</h1>
-  <p class="hero-tagline">One Platform. Unlimited Possibilities.</p>
-  <p class="hero-sub">Organizations today face mounting complexity across customers, suppliers, partners, applications, and business processes. JD'EAI cuts through that complexity with AI-powered automation that connects, streamlines, and optimizes how your business operates — whether you're managing hundreds of trading partners, processing thousands of invoices, or orchestrating procurement workflows across multiple ERPs.</p>
-  <div class="hero-ctas">
-    <a href="#" class="btn-primary"><i class="fa-solid fa-calendar-check" style="font-size:13px;"></i> Request a Demo</a>
-    <a href="WhyAutomate.html" class="btn-secondary">Why enterprise automation <i class="fa-solid fa-arrow-down" style="font-size:12px;"></i></a>
+ 
+
+<!-- ══ ERP / INTEGRATIONS ══ -->
+<div style="border-bottom:1px solid var(--border);" id="erp">
+<section class="reveal">
+  <div class="section-eyebrow">Integrations</div>
+  <h2 class="section-title">Proven on JD Edwards. Built for any ERP.</h2>
+  <p class="section-desc">Native connectors for the ERP, CRM, and SCM platforms your business already runs on — no custom development required.</p>
+  <div class="int-grid">
+    <div class="int-chip jde"><div class="int-dot" style="background:#38BDF8;"></div><span class="int-label">Oracle JD Edwards</span><span class="int-badge">Proven</span></div>
+    <div class="int-chip"><div class="int-dot" style="background:#fb7185;"></div>Oracle Fusion Cloud</div>
+    <div class="int-chip"><div class="int-dot" style="background:#34d399;"></div>Microsoft Dynamics 365</div>
+    <div class="int-chip"><div class="int-dot" style="background:#fbbf24;"></div>SAP</div>
+    <div class="int-chip"><div class="int-dot" style="background:#60a5fa;"></div>Salesforce</div>
+    <div class="int-chip"><div class="int-dot" style="background:#a78bfa;"></div>ServiceNow</div>
+    <div class="int-chip"><div class="int-dot" style="background:#4ade80;"></div>NetSuite</div>
+    <div class="int-chip"><div class="int-dot" style="background:#94a3b8;"></div>Legacy Systems</div>
+    <div class="int-chip"><div class="int-dot" style="background:#fb923c;"></div>REST &amp; SOAP APIs</div>
+    <div class="int-chip"><div class="int-dot" style="background:#2DD4BF;"></div>Custom Applications</div>
   </div>
 </section>
-
- 
-
- 
+</div>
 
  
 

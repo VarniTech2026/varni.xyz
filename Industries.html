@@ -9,15 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
- 
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX'); 
-  </script>
- 
 </head>
 <body>
 <div class="page-wrap">
@@ -30,35 +21,34 @@
   </a>
   </div>
   <div class="nav-links">
-  <a href="index.html" class="active">Home</a>
+  <a href="index.html">Home</a>
     <a href="WhyAutomate.html">Why Automate</a>
     <a href="TheProblem.html">The Problem</a>
     <a href="Capabilities.html">Capabilities</a>
     <a href="ERPSupport.html">ERP Support</a>
-    <a href="Industries.html">Industries</a>
+    <a href="Industries.html" class="active">Industries</a>
     <a href="Outcomes.html">Outcomes</a>
   </div>
-  <button class="nav-cta" onclick="window.location.href='#'" >Request a Demo</button>
+  <button class="nav-cta">Request a Demo</button>
 </nav>
 
-<!-- ══ HERO ══ -->
-<section class="hero reveal">
-  <div class="hero-badge"><i class="fa-solid fa-bolt" style="font-size:11px;"></i>     Enterprise Automation &amp; Intelligence Platform</div>
-  <p class="hero-eyeline">Proven on JD Edwards. Built for every ERP.</p>
-  <h1 class="hero-title">      <span class="gradient">JD'EAI™</span> — Enterprise Automation<br>Meets Trusted Intelligence.</h1>
-  <p class="hero-tagline">One Platform. Unlimited Possibilities.</p>
-  <p class="hero-sub">Organizations today face mounting complexity across customers, suppliers, partners, applications, and business processes. JD'EAI cuts through that complexity with AI-powered automation that connects, streamlines, and optimizes how your business operates — whether you're managing hundreds of trading partners, processing thousands of invoices, or orchestrating procurement workflows across multiple ERPs.</p>
-  <div class="hero-ctas">
-    <a href="#" class="btn-primary"><i class="fa-solid fa-calendar-check" style="font-size:13px;"></i> Request a Demo</a>
-    <a href="WhyAutomate.html" class="btn-secondary">Why enterprise automation <i class="fa-solid fa-arrow-down" style="font-size:12px;"></i></a>
+
+<!-- ══ INDUSTRIES ══ -->
+<div style="border-bottom:1px solid var(--border);" id="industries">
+<section class="reveal">
+  <div class="section-eyebrow">Industry solutions</div>
+  <h2 class="section-title">Purpose-built for your sector</h2>
+  <p class="section-desc">Tailored automation frameworks across five core industries — with deep process expertise built in.</p>
+  <div class="ind-grid">
+    <div class="ind-card"><div class="ind-icon"><i class="fa-solid fa-industry"></i></div><div class="ind-name">Manufacturing &amp; Distribution</div><div class="ind-desc">Automate order-to-cash, procure-to-pay, supplier collaboration, and supply chain transactions across complex partner networks.</div></div>
+    <div class="ind-card"><div class="ind-icon"><i class="fa-solid fa-truck-fast"></i></div><div class="ind-name">Logistics &amp; Transportation</div><div class="ind-desc">Streamline shipment processing, carrier integrations, freight invoicing, and transportation visibility from a single platform.</div></div>
+    <div class="ind-card"><div class="ind-icon"><i class="fa-solid fa-bag-shopping"></i></div><div class="ind-name">Retail &amp; Consumer Goods</div><div class="ind-desc">Accelerate trading partner onboarding, inventory visibility, order processing, and fulfillment operations at retail speed and scale.</div></div>
+    <div class="ind-card"><div class="ind-icon"><i class="fa-solid fa-heart-pulse"></i></div><div class="ind-name">Healthcare &amp; Life Sciences</div><div class="ind-desc">Improve document processing, compliance workflows, supplier management, and operational efficiency with audit-ready automation.</div></div>
+    <div class="ind-card"><div class="ind-icon"><i class="fa-solid fa-landmark"></i></div><div class="ind-name">Financial Services</div><div class="ind-desc">Automate document-intensive processes, approvals, compliance controls, and customer communications at enterprise scale.</div></div>
   </div>
 </section>
+</div>
 
- 
-
- 
-
- 
 
 <!-- ══ FOOTER CTA ══ -->
 <div class="footer-cta-wrap">
