@@ -3,98 +3,322 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JD'EAI™ — Enterprise Automation Meets Trusted Intelligence | PCB Apps</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
- 
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX'); 
-  </script>
- 
+<title>Varni Technologies | Software & Data Solutions</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+}
+
+header{
+    background:#0f172a;
+    color:#fff;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.hero{
+    background:linear-gradient(rgba(15,23,42,.85),rgba(15,23,42,.85)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:900px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#38bdf8;
+    color:#0f172a;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
+    color:#0f172a;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#f8fafc;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.about{
+    background:#f1f5f9;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    text-align:center;
+    gap:20px;
+}
+
+.stat-box{
+    padding:20px;
+}
+
+.stat-box h2{
+    color:#0ea5e9;
+    font-size:40px;
+}
+
+.tech{
+    text-align:center;
+}
+
+.tech span{
+    display:inline-block;
+    margin:10px;
+    padding:10px 18px;
+    background:#e2e8f0;
+    border-radius:20px;
+}
+
+.cta{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+}
+
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+.hero h1{
+    font-size:36px;
+}
+}
+</style>
 </head>
+
 <body>
-<div class="page-wrap">
 
-<!-- ══ NAV ══ -->
-<nav>
-  <a href="https://pcbapps.com" class="nav-logo">
-   <div class="nav-logo-mark">
-   <img src="PCB-Apps-logo.png" alt="PCB Apps — Pioneers in Business Applications" />
-  </a>
-  </div>
-  <div class="nav-links">
-  <a href="index.html" class="active">Home</a>
-    <a href="WhyAutomate.html">Why Automate</a>
-    <a href="TheProblem.html">The Problem</a>
-    <a href="Capabilities.html">Capabilities</a>
-    <a href="ERPSupport.html">ERP Support</a>
-    <a href="Industries.html">Industries</a>
-    <a href="Outcomes.html">Outcomes</a>
-  </div>
-  <button class="nav-cta" onclick="window.location.href='#'" >Request a Demo</button>
-</nav>
+<header>
+    <div class="logo">VARNI</div>
 
-<!-- ══ HERO ══ -->
-<section class="hero reveal">
-  <div class="hero-badge"><i class="fa-solid fa-bolt" style="font-size:11px;"></i>     Enterprise Automation &amp; Intelligence Platform</div>
-  <p class="hero-eyeline">Proven on JD Edwards. Built for every ERP.</p>
-  <h1 class="hero-title">      <span class="gradient">JD'EAI™</span> — Enterprise Automation<br>Meets Trusted Intelligence.</h1>
-  <p class="hero-tagline">One Platform. Unlimited Possibilities.</p>
-  <p class="hero-sub">Organizations today face mounting complexity across customers, suppliers, partners, applications, and business processes. JD'EAI cuts through that complexity with AI-powered automation that connects, streamlines, and optimizes how your business operates — whether you're managing hundreds of trading partners, processing thousands of invoices, or orchestrating procurement workflows across multiple ERPs.</p>
-  <div class="hero-ctas">
-    <a href="#" class="btn-primary"><i class="fa-solid fa-calendar-check" style="font-size:13px;"></i> Request a Demo</a>
-    <a href="WhyAutomate.html" class="btn-secondary">Why enterprise automation <i class="fa-solid fa-arrow-down" style="font-size:12px;"></i></a>
-  </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#tech">Technologies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Empowering Businesses Through Technology</h1>
+
+    <p>
+        Varni Technologies delivers innovative software solutions,
+        cloud services, data engineering, and digital transformation
+        strategies that help businesses scale efficiently and stay
+        ahead in a rapidly evolving technological landscape.
+    </p>
+
+    <a href="#contact" class="btn">Start Your Project</a>
 </section>
 
- 
+<section>
+    <h2 class="section-title">Why Choose Varni?</h2>
 
- 
+    <div class="stats">
+        <div class="stat-box">
+            <h2>10+</h2>
+            <p>Years of Industry Experience</p>
+        </div>
 
- 
+        <div class="stat-box">
+            <h2>100%</h2>
+            <p>Customer Focused Solutions</p>
+        </div>
 
-<!-- ══ FOOTER CTA ══ -->
-<div class="footer-cta-wrap">
-  <p class="section-eyebrow" style="display:block;text-align:center;margin-bottom:.75rem;">Ready to get started?</p>
-  <h2 class="footer-cta-title">Cut Through Complexity.<br>Automate with Intelligence.</h2>
-  <p class="footer-cta-sub">Built on 20+ years of enterprise expertise. Powered by modern AI.<br>Purpose-built for Oracle JD Edwards and the broader enterprise ecosystem.</p>
-  <div class="footer-cta-btns">
-    <a href="#" class="btn-primary"><i class="fa-solid fa-calendar-check" style="font-size:13px;"></i> Request a Demo</a>
-    <a href="#" class="btn-secondary"><i class="fa-solid fa-phone" style="font-size:13px;"></i> Contact PCB Apps</a>
-  </div>
-</div>
+        <div class="stat-box">
+            <h2>24/7</h2>
+            <p>Technical Support</p>
+        </div>
 
-<!-- ══ FOOTER ══ -->
+        <div class="stat-box">
+            <h2>Cloud</h2>
+            <p>Ready Architecture</p>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Custom Software Development</h3>
+            <p>
+                Enterprise-grade applications built using .NET, C#,
+                ASP.NET Core, Web APIs, and modern frameworks.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Data Engineering</h3>
+            <p>
+                Build scalable ETL pipelines, data warehouses,
+                Azure Data Factory workflows, and PySpark solutions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Services</h3>
+            <p>
+                Azure cloud migration, deployment automation,
+                monitoring, and infrastructure optimization.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Business Intelligence</h3>
+            <p>
+                Transform raw data into meaningful insights using
+                Power BI dashboards and reporting solutions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>
+                Responsive websites and web applications designed
+                for performance, security, and scalability.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance & Support</h3>
+            <p>
+                Ongoing monitoring, optimization, bug fixing,
+                and technical support for business applications.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <p style="max-width:1000px;margin:auto;text-align:center;font-size:18px;">
+        Varni Technologies is a technology-driven company dedicated to
+        helping organizations leverage software, cloud computing, and
+        data analytics to accelerate growth. Our mission is to deliver
+        reliable, scalable, and future-ready digital solutions that
+        solve real business challenges. We combine technical expertise,
+        innovation, and customer-centric thinking to create lasting value.
+    </p>
+</section>
+
+<section id="tech">
+    <h2 class="section-title">Technologies We Work With</h2>
+
+    <div class="tech">
+        <span>C#</span>
+        <span>.NET Core</span>
+        <span>ASP.NET</span>
+        <span>SQL Server</span>
+        <span>Python</span>
+        <span>PySpark</span>
+        <span>Azure</span>
+        <span>Azure Data Factory</span>
+        <span>Power BI</span>
+        <span>GitHub</span>
+        <span>Docker</span>
+        <span>REST APIs</span>
+    </div>
+</section>
+
+<section class="cta" id="contact">
+    <h2>Ready to Transform Your Business?</h2>
+
+    <p style="margin-top:20px;">
+        Let's discuss how Varni Technologies can help you build,
+        modernize, and scale your digital solutions.
+    </p>
+
+    <a href="mailto:contact@varni.xyz" class="btn">
+        Contact Us
+    </a>
+
+    <p style="margin-top:25px;">
+        Email: contact@varni.xyz<br>
+        Website: www.varni.xyz
+    </p>
+</section>
+
 <footer>
-  <div>© 2025 PCB Apps, a Nobl Q company. JD'EAI™ is a trademark of PCB Apps.</div>
-  <div style="display:flex;gap:1.5rem;">
-    <a href="#">Privacy</a>
-    <a href="#">Terms</a>
-    <a href="#">Contact</a>
-  </div>
+    <p>
+        © 2026 Varni Technologies. All Rights Reserved.
+    </p>
 </footer>
 
-</div><!-- /page-wrap -->
-
-<script>
-const caps=['intake','edi','idp','ap','ar','po','workflow'];
-function showDetail(id,el){
-  caps.forEach(c=>{document.getElementById('detail-'+c).classList.remove('visible');});
-  document.querySelectorAll('.cap-card').forEach(c=>c.classList.remove('active'));
-  document.getElementById('detail-'+id).classList.add('visible');
-  el.classList.add('active');
-}
-const observer=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
-},{threshold:0.08});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-</script>
 </body>
 </html>
